@@ -8,8 +8,10 @@ document.getElementById("logInBtn").addEventListener("click", function () {
     const inputPass = document.getElementById("inputPass").value;
     //step4 : 
     if (inputMail==="alemrangazi@gmail.com" && inputPass === "471986") {
-        window
+        window.location.href = "dashboard.html";
+        console.log(window);
     } else {
        alert("Invalid Email or Password")  
     }
+    
 })
