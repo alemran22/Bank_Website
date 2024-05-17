@@ -9,7 +9,6 @@ document.getElementById("logInBtn").addEventListener("click", function () {
     //step4 : 
     if (inputMail==="alemrangazi@gmail.com" && inputPass === "471986") {
         window.location.href = "dashboard.html";
-        console.log(window);
     } else {
        alert("Invalid Email or Password")  
     }
