@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main class="max-w-5xl mx-auto h-screen flex flex-col items-center justify-center">
+        <div class="w-full">
+            <img src="https://seeklogo.com/images/B/bangladesh-bank-logo-D3A2278B52-seeklogo.com.png" alt=""
+                class="h-28 w-28 mx-auto">
+        </div>
+
+        <!-- bank Details -->
+        <div class="grid grid-cols-12 gap-4 mt-10">
+            <!-- total deposit -->
+            <div class="bg-green-500 p-10 rounded-lg col-span-4">
+                <h1 class="text-white text-2xl font-semibold">Total Deposit</h1>
+                <p class="text-white text-5xl font-extrabold mt-5">$ <span class="" id="totalDeposit">00</span></p>
+            </div>
+            <!-- total withdraw -->
+            <div class="bg-orange-500 p-10 rounded-lg col-span-4">
+                <h1 class="text-white text-2xl font-semibold">Total Withdraw</h1>
+                <p class="text-white text-5xl font-extrabold mt-5">$ <span class="" id="totalwithdraw">00</span></p>
+            </div>
+            <!-- total Balance -->
+            <div class="bg-cyan-500 p-10 rounded-lg col-span-4">
+                <h1 class="text-white text-2xl font-semibold">Total Balance</h1>
+                <p class="text-white text-5xl font-extrabold mt-5">$ <span class="" id="totalBalance">1000</span></p>
+            </div>
+            <!-- deposit field -->
+            <div class="col-span-6 bg-blue-500 p-8 rounded-lg flex flex-col">
+                <h1 class="text-white text-2xl font-semibold">Deposit</h1>
+                <input type="text" name="" id="depositInput" placeholder="Deposit Amount"
+                    class="mt-5 py-2 px-6 rounded-md outline-none text-xl font-semibold ">
+                <button
+                    class="mt-5 py-2 px-4 rounded-md bg-green-600 hover:bg-green-700 outline-none focus:animate-bounce text-xl text-white font-semibold" id="depositBtn">Deposit</button>
+            </div>
+            <!-- Withdraw field -->
+            <div class="col-span-6 bg-yellow-800 p-8 rounded-lg flex flex-col">
+                <h1 class="text-white text-2xl font-semibold">Withdraw</h1>
+                <input type="text" name="" id="withdrawInput" placeholder="Withdraw Amount"
+                    class="mt-5 py-2 px-6 rounded-md outline-none text-xl font-semibold">
+                <button
+                    class="mt-5 py-2 px-4 rounded-md bg-blue-600 hover:bg-blue-700 outline-none focus:animate-bounce text-xl text-white font-semibold" id="withdrawBtn">Withdraw</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- script file -->
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+
+</html>
